@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/comic/100/dice.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Game (Khushnudbek)</title>
+</head>
+<body>
+    <div class="winner hidden">
+        <p>🏆 <span>Player 1</span> 🏆</p>
+        <h3>won the Game!</h3>
+        <h6><span class="total1">10</span>━━━━━<span class="total2">34</span></h6>
+        <button type="submit" id="newgame">🔄 New game</button>
+    </div>
+    <h1 class="finish">🏁 Finish: 100 🏁</h1>
+    <div class="container">
+        <div class="players selectedPlayer" id="areaPlayer1">
+            <h1>Player 1</h1>
+            <span class="commonBall">0</span>
+            <button type="submit">Current <span id="tempBall1">0</span></button>
+        </div>
+        <div class="players" id="areaPlayer2">
+            <h1>Player 2</h1>
+            <span class="commonBall">0</span>
+            <button type="submit">Current <span id="tempBall2">0</span></button>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="control">
+            <button type="submit" id="newgame">🔄 New game</button>
+            <img src="./assets/images/dice-1.png" alt="Roll dice" class="hidden">
+            <button type="submit" id="rolldice">🎲 Roll dice</button>
+            <button type="submit" id="hold">📥 Hold</button>
+        </div>
+    </div>
+    <a class="link-to-info" href="./info.html">🕹️ O'yin  qoidalari 🎮</a>
+    <script src="./index.js"></script>
+</body>
+</html>
